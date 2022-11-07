@@ -1,0 +1,63 @@
+/*
+* {
+    border:1px solid black;
+    box-sizing: border-box;
+}
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin:0;
+}
+
+nav {
+    position:fixed;
+    top:0;
+    width:100%;
+    background-color:black;
+    font-size:50px;
+    transition:font-size 0.5s , background-color 0.5s;
+}
+
+nav a {
+    color:white;
+    text-decoration:none;  
+}
+
+header , section {
+    min-height: 100vh;
+    border-top:1px dotted black;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    /*margin:0;*/
+    padding:0;
+    display:flex;
+    justify-content:space-evenly;
+}
+
+h1 , h2 {
+    padding-top:50px;
+}
+
+/* Sélecteur pour l'élément nav, uniquement lorsque l'élément body possède la classe "scrolled" */
+body.scrolled nav {
+    background-color:rgba(0,0,0,0.33);
+    font-size:16px;
+}
+
+
+
+
+
+
+
+
+
+
+
